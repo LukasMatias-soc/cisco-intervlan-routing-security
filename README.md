@@ -56,13 +56,10 @@ access-list 100 permit ip any any
 
 ---
 
-## 🧪 Validação dos Testes
+## 📥 Como Executar o Projeto
 
-### Arquitetura da Topologia
-![Topologia da Rede](topologia.png)
+1. Baixe o repositório ou faça o clone:
+   git clone [https://github.com/LukasMatias-soc/cisco-intervlan-routing-security.git](https://github.com/LukasMatias-soc/cisco-intervlan-routing-security.git)
 
-### Testes de Conectividade e Bloqueio ACL
-![Evidência dos Testes ICMP](teste-acl.png)
-
-* **Conectividade Local:** `PC-FIN1` obtém sucesso nos testes de ICMP para o gateway `192.168.10.1`.
-* **Segurança Inter-VLAN:** Tentativas de comunicação direta da VLAN 10 para a VLAN 20 retornam `Destination host unreachable`, confirmando a eficácia da ACL 100 contra movimentação lateral.
+2. Abra o arquivo **cisco-intervlan-routing-security.pkt** no software **Cisco Packet Tracer**.
+3. Realize os testes de conectividade e validação das ACLs via prompt de comando dos hosts.
